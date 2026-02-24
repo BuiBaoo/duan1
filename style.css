@@ -13,10 +13,10 @@
 }
 .menu a{
     padding: 15px 20px;
-    color: pink;
+    color: red;
 }
 .menu hover{
-    background-color: red;
+    background-color: lightgray;
     color: black;
 }
 .content{
