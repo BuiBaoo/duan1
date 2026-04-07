@@ -3,10 +3,13 @@
         <meta charset="utf-8">
   </head>
   <body>
-    <p><b>Cám ơn bạn đã góp ý kiến</b></p>
-    Chúng tôi xin ghi nhận ý kiến của bạn.
-    <form action="donggop.html" method"POST">
-        <input type="submit" name="back" value="Quay lại">
-    </form>
+    <p id ="kq" ></p>
+        <script>
+            let pp = new URLSearchParams(window.location.search);
+            let ten =pp.get("ten");
+            let dc=pp.get("diachi");
+            let yk=pp.get("comment");
+            document.getElementById("kq").innerHTML = "Cảm ơn bạn " +ten+" email: "+dc+" đã góp ý <br><br> Chúng tôi ghi nhận ý kiến của bạn như sau:<br>" + yk;
+        </script>
   </body>
 </html>
